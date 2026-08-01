@@ -1,0 +1,112 @@
+.header {
+    min-height: 100vh;
+    background: var(--dark-gradient);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.eyebrow {
+    color: var(--text-yellow-opacity-80);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.3em;
+}
+
+.header-title {
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-align: center;
+    font-family: var(--font-serif);
+    font-weight: 900;
+    font-size: 3rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.title-emphasis {
+    -webkit-text-fill-color: var(--light-emphasis);
+}
+
+.year {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: var(--text-yellow);
+    margin-bottom: 2rem;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.year::before,
+.year::after {
+    content: "";
+    margin: 0 1rem 0 1rem;
+    height: 1px;
+    width: 4rem;
+    background-image: var(--gradient);
+}
+
+.order {
+    color: var(--dark);
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    background: var(--gradient);
+    border-radius: 0.75rem;
+    box-shadow: 0 0 40px #c09d5926,0 0 80px #c09d590d;
+}
+
+.order:hover {
+    box-shadow: 0 0 40px #c09d5926,0 0 80px #c09d590d;
+}
+
+.mouse-icon {
+    width: 1.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--text-yellow-opacity-80);
+    border-radius: 10em;
+
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 3rem;
+
+    animation: float 2s ease-in-out infinite;
+}
+
+.mouse-icon::after {
+    content: '';
+    height: 8px;
+    border: 2px solid var(--text-yellow-opacity-80);
+    margin-top: 30%;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0);
+    }
+
+    50% {
+        transform: translatey(-8px);
+    }
+
+    100% {
+        transform: translatey(0);
+    }
+}

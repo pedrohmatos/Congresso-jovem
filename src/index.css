@@ -11,4 +11,19 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
+  background-color: var(--dark);
+}
+
+:root {
+  --gradient: linear-gradient(135deg, #d9bf8c, #c09d59, #967940);
+  --dark-gradient: linear-gradient(180deg,#0a121f,#152132,#1e2b3e);
+  --dark: #101a29;
+
+  --light-emphasis: #ececec;
+  --text-yellow: #c09d59;
+  --text-yellow-opacity-80: #c09d59cc;
+  --text-yellow-opacity-50: #c09d5999;
+
+
+  --font-serif: Playfair Display, serif;
 }
