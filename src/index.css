@@ -19,11 +19,15 @@ body {
   --dark-gradient: linear-gradient(180deg,#0a121f,#152132,#1e2b3e);
   --dark: #101a29;
 
-  --light-emphasis: #ececec;
+  --light-emphasis: #ebe7e0;
   --text-yellow: #c09d59;
   --text-yellow-opacity-80: #c09d59cc;
   --text-yellow-opacity-50: #c09d5999;
+  --text-subtle: #7b899d;
+
 
 
   --font-serif: Playfair Display, serif;
+
+  --shine-box-shadow: 0 0 40px #c09d5926, 0 0 80px #c09d590d;
 }
