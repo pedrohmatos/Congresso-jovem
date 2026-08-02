@@ -1,5 +1,5 @@
 .header {
-    min-height: 100vh;
+    min-height: 75vh;
     background: var(--dark-gradient);
 
     display: flex;
@@ -115,6 +115,7 @@
 .first-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     row-gap: 3rem;
 }
@@ -141,6 +142,10 @@
 
     font-family: var(--font-serif);
     font-size: 2.25rem;
+}
+
+.tshirt-container {
+    width: fit-content;
 }
 
 .tshirt {
@@ -179,6 +184,8 @@
     color: var(--light-emphasis);
     font-size: 1.875rem;
     line-height: 2.25rem;
+
+    margin-bottom: 3rem;
 }
 
 .specification-container {
@@ -263,4 +270,38 @@ small {
     color: var(--text-subtle);
     font-size: 0.975rem;
     line-height: 1.25rem;
+}
+
+@media screen and (min-width: 450px) {
+    .specification-container {
+        width: 25rem;
+    }
+
+    .tshirt {
+        width: 410px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .tshirt {
+        width: 550px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .first-section {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .tshirt {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .first-section {
+        justify-content: center;
+        column-gap: 5rem;
+    }
 }

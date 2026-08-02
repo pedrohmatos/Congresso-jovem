@@ -26,7 +26,7 @@ function App() {
               <p className='eyebrow-2'>Coleção 2026</p>
               <h2 className='first-section-title'>Modelos oficiais</h2>
             </div>
-            <figure>
+            <figure className='tshirt-container'>
               <img src={blueTshirt} alt="blue-shirt" className='tshirt' />
               <figcaption className='tshirt-caption-container'>
                 <button type='button' className='tshirt-caption'>
@@ -39,9 +39,8 @@ function App() {
             </figure>
           </div>
 
-          <h3 className='printed-tshirt'>Estampa Exclusiva</h3>
-
           <aside className='specification-container'>
+          <h3 className='printed-tshirt'>Estampa Exclusiva</h3>
             <div className='specification'>
               <span className='specification-title'>Modelos</span>
               <span className='specification-description'>Tradicional & Oversized</span>
