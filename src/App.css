@@ -173,3 +173,94 @@
     border-radius: 10em;
     cursor: pointer;
 }
+
+.printed-tshirt {
+    font-family: var(--font-serif);
+    color: var(--light-emphasis);
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.specification-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.specification {
+    display: flex;
+    justify-content: space-between;
+}
+
+.specification-title {
+    color: var(--text-yellow);
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.specification-description {
+    color: var(--text-subtle);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.price-container {
+    display: flex;
+    align-items: baseline;
+    column-gap: 0.75rem;
+
+    margin-top: 2rem;
+}
+
+.price-container> :first-child {
+    color: var(--text-subtle);
+}
+
+.price {
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 2.25rem;
+    font-family: var(--font-serif);
+}
+
+.buy {
+    background: var(--gradient);
+    color: var(--dark);
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    border-radius: 0.75rem;
+
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 700;
+    box-shadow: 0 0 40px #c09d5926, 0 0 80px #c09d590d;
+
+    width: fit-content;
+}
+
+footer {
+    text-align: center;
+    padding: 6rem 1.5rem;
+}
+
+.church {
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+small {
+    color: var(--text-subtle);
+    font-size: 0.975rem;
+    line-height: 1.25rem;
+}

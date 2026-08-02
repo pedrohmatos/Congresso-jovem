@@ -38,8 +38,36 @@ function App() {
               </figcaption>
             </figure>
           </div>
+
+          <h3 className='printed-tshirt'>Estampa Exclusiva</h3>
+
+          <aside className='specification-container'>
+            <div className='specification'>
+              <span className='specification-title'>Modelos</span>
+              <span className='specification-description'>Tradicional & Oversized</span>
+            </div>
+            <div className='specification'>
+              <span className='specification-title'>Cores</span>
+              <span className='specification-description'>Azul Marinho & Mostarda</span>
+            </div>
+            <div className='specification'>
+              <span className='specification-title'>Tamanhos</span>
+              <span className='specification-description'>P . M . G . GG . XG</span>
+            </div>
+
+            <div className='price-container'>
+              <span>A partir de</span>
+              <span className='price'> R$ 45</span>
+            </div>
+            <a href="#" className='buy'>Garantir a minha</a>
+          </aside>
+
         </section>
       </main>
+      <footer>
+        <p className='church'>Igreja Batista Nova Geração</p>
+        <small>© 2026 IBNG Itabuna. Todos os direitos reservados.</small>
+      </footer>
     </>
   )
 }
