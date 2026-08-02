@@ -22,6 +22,7 @@
 .header-title {
     background: var(--gradient);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     text-align: center;
@@ -68,11 +69,7 @@
     padding: 1rem 2.5rem 1rem 2.5rem;
     background: var(--gradient);
     border-radius: 0.75rem;
-    box-shadow: 0 0 40px #c09d5926,0 0 80px #c09d590d;
-}
-
-.order:hover {
-    box-shadow: 0 0 40px #c09d5926,0 0 80px #c09d590d;
+    box-shadow: 0 0 40px #c09d5926, 0 0 80px #c09d590d;
 }
 
 .mouse-icon {
@@ -99,15 +96,15 @@
 
 @keyframes float {
     0% {
-        transform: translatey(0);
+        transform: translateY(0);
     }
 
     50% {
-        transform: translatey(-8px);
+        transform: translateY(-8px);
     }
 
     100% {
-        transform: translatey(0);
+        transform: translateY(0);
     }
 }
 
