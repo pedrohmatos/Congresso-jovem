@@ -20,46 +20,46 @@ function App() {
 
       </header>
       <main className='main'>
-        <section className='first-section'>
-          <div>
-            <div className='first-section-titles'>
-              <p className='eyebrow-2'>Coleção 2026</p>
-              <h2 className='first-section-title'>Modelos oficiais</h2>
-            </div>
-            <figure className='tshirt-container'>
-              <img src={blueTshirt} alt="blue-shirt" className='tshirt' />
-              <figcaption className='tshirt-caption-container'>
-                <button type='button' className='tshirt-caption'>
-                  Azul marinho
-                </button>
-                <button type='button' className='tshirt-caption'>
-                  Mostarda
-                </button>
-              </figcaption>
-            </figure>
+        <section>
+          <div className='first-section-titles'>
+            <p className='eyebrow-2'>Coleção 2026</p>
+            <h2 className='first-section-title'>Modelos oficiais</h2>
           </div>
-
-          <aside className='specification-container'>
-          <h3 className='printed-tshirt'>Estampa Exclusiva</h3>
-            <div className='specification'>
-              <span className='specification-title'>Modelos</span>
-              <span className='specification-description'>Tradicional & Oversized</span>
+          <div className='first-section'>
+            <div>
+              <figure className='tshirt-container'>
+                <img src={blueTshirt} alt="blue-shirt" className='tshirt' />
+                <figcaption className='tshirt-caption-container'>
+                  <button type='button' className='tshirt-caption'>
+                    Azul marinho
+                  </button>
+                  <button type='button' className='tshirt-caption'>
+                    Mostarda
+                  </button>
+                </figcaption>
+              </figure>
             </div>
-            <div className='specification'>
-              <span className='specification-title'>Cores</span>
-              <span className='specification-description'>Azul Marinho & Mostarda</span>
-            </div>
-            <div className='specification'>
-              <span className='specification-title'>Tamanhos</span>
-              <span className='specification-description'>P . M . G . GG . XG</span>
-            </div>
-
-            <div className='price-container'>
-              <span>A partir de</span>
-              <span className='price'> R$ 45</span>
-            </div>
-            <a href="#" className='buy'>Garantir a minha</a>
-          </aside>
+            <aside className='specification-container'>
+              <h3 className='printed-tshirt'>Estampa Exclusiva</h3>
+              <div className='specification'>
+                <span className='specification-title'>Modelos</span>
+                <span className='specification-description'>Tradicional & Oversized</span>
+              </div>
+              <div className='specification'>
+                <span className='specification-title'>Cores</span>
+                <span className='specification-description'>Azul Marinho & Mostarda</span>
+              </div>
+              <div className='specification'>
+                <span className='specification-title'>Tamanhos</span>
+                <span className='specification-description'>P . M . G . GG . XG</span>
+              </div>
+              <div className='price-container'>
+                <span>A partir de</span>
+                <span className='price'> R$ 45</span>
+              </div>
+              <a href="#" className='buy'>Garantir a minha</a>
+            </aside>
+          </div>
 
         </section>
       </main>
