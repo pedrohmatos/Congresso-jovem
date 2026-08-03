@@ -1,0 +1,14 @@
+.tshirt-caption {
+    color: var(--text-yellow);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1rem;
+
+    padding: 0.5rem 1rem;
+    background-color: #c09d591a;
+    border: 1px solid var(--text-yellow);
+    border-radius: 10em;
+    cursor: pointer;
+}

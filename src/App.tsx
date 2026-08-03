@@ -1,5 +1,8 @@
 import './App.css'
-import blueTshirt from './assets/azul-marinho.jpeg';
+import blueTshirt from './assets/arte_01.png';
+import ChangeShirts from './components/ChangeShirts';
+import GoldenLink from './components/GoldenLink';
+import Specification from './components/Specification';
 
 function App() {
 
@@ -14,7 +17,7 @@ function App() {
         </h1>
         <div className='year'>2026</div>
 
-        <a href="#" className='order'>Fazer pedido</a>
+        <GoldenLink>Fazer pedido</GoldenLink>
 
         <div className='mouse-icon'></div>
 
@@ -30,34 +33,21 @@ function App() {
               <figure className='tshirt-container'>
                 <img src={blueTshirt} alt="blue-shirt" className='tshirt' />
                 <figcaption className='tshirt-caption-container'>
-                  <button type='button' className='tshirt-caption'>
-                    Azul marinho
-                  </button>
-                  <button type='button' className='tshirt-caption'>
-                    Mostarda
-                  </button>
+                  <ChangeShirts>Azul marinho</ChangeShirts>
+                  <ChangeShirts>Mostarda</ChangeShirts>
                 </figcaption>
               </figure>
             </div>
             <aside className='specification-container'>
               <h3 className='printed-tshirt'>Estampa Exclusiva</h3>
-              <div className='specification'>
-                <span className='specification-title'>Modelos</span>
-                <span className='specification-description'>Tradicional & Oversized</span>
-              </div>
-              <div className='specification'>
-                <span className='specification-title'>Cores</span>
-                <span className='specification-description'>Azul Marinho & Mostarda</span>
-              </div>
-              <div className='specification'>
-                <span className='specification-title'>Tamanhos</span>
-                <span className='specification-description'>P . M . G . GG . XG</span>
-              </div>
+              <Specification title='Modelos' description='Tradicional & Oversized' />
+              <Specification title='Cores' description='Azul Marinho & Mostarda' />
+              <Specification title='Tamanhos' description='P . M . G . GG . XG' />
               <div className='price-container'>
                 <span>A partir de</span>
                 <span className='price'> R$ 45</span>
               </div>
-              <a href="#" className='buy'>Garantir a minha</a>
+              <GoldenLink>Garantir a minha</GoldenLink>
             </aside>
           </div>
 

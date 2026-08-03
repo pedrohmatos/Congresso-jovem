@@ -1,0 +1,17 @@
+.specification {
+    display: flex;
+    justify-content: space-between;
+}
+
+.specification-title {
+    color: var(--text-yellow);
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.specification-description {
+    color: var(--text-subtle);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}

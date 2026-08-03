@@ -58,20 +58,6 @@
     background-image: var(--gradient);
 }
 
-.order {
-    color: var(--dark);
-    text-decoration: none;
-    letter-spacing: 0.05rem;
-    font-weight: 700;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-
-    padding: 1rem 2.5rem 1rem 2.5rem;
-    background: var(--gradient);
-    border-radius: 0.75rem;
-    box-shadow: 0 0 40px #c09d5926, 0 0 80px #c09d590d;
-}
-
 .mouse-icon {
     width: 1.5rem;
     height: 2.5rem;
@@ -164,21 +150,6 @@
     margin-top: 1.5rem;
 }
 
-.tshirt-caption {
-    color: var(--text-yellow);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-weight: 600;
-    font-size: 0.75rem;
-    line-height: 1rem;
-
-    padding: 0.5rem 1rem;
-    background-color: #c09d591a;
-    border: 1px solid var(--text-yellow);
-    border-radius: 10em;
-    cursor: pointer;
-}
-
 .printed-tshirt {
     font-family: var(--font-serif);
     color: var(--light-emphasis);
@@ -192,24 +163,6 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-}
-
-.specification {
-    display: flex;
-    justify-content: space-between;
-}
-
-.specification-title {
-    color: var(--text-yellow);
-    font-weight: 600;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-}
-
-.specification-description {
-    color: var(--text-subtle);
-    font-size: 0.875rem;
-    line-height: 1.25rem;
 }
 
 .price-container {
@@ -232,22 +185,6 @@
     font-weight: 900;
     font-size: 2.25rem;
     font-family: var(--font-serif);
-}
-
-.buy {
-    background: var(--gradient);
-    color: var(--dark);
-    padding: 1rem 2.5rem 1rem 2.5rem;
-    border-radius: 0.75rem;
-
-    text-decoration: none;
-    letter-spacing: 0.05rem;
-    text-transform: uppercase;
-    font-size: 0.875rem;
-    font-weight: 700;
-    box-shadow: 0 0 40px #c09d5926, 0 0 80px #c09d590d;
-
-    width: fit-content;
 }
 
 footer {

@@ -1,0 +1,15 @@
+a {
+    color: var(--dark);
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    background: var(--gradient);
+    border-radius: 0.75rem;
+    box-shadow: 0 0 40px #c09d5926, 0 0 80px #c09d590d;
+
+    width: fit-content;
+}
