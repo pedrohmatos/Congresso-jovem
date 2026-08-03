@@ -19,14 +19,16 @@
     letter-spacing: 0.3em;
 }
 
-.header-title {
+.title {
     background: var(--gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    text-align: center;
     font-family: var(--font-serif);
+}
+
+.header-h1 {
+    text-align: center;
     font-weight: 900;
     font-size: 3rem;
 
@@ -121,12 +123,7 @@
     margin-bottom: 0.75rem;
 }
 
-.first-section-title {
-    background: var(--gradient);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    font-family: var(--font-serif);
+.first-section-h2 {
     font-size: 2.25rem;
 }
 

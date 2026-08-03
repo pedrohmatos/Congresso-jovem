@@ -10,7 +10,7 @@ function App() {
     <>
       <header className='header'>
         <p className='eyebrow'>Ministério de Jovens IBNG</p>
-        <h1 className='header-title'>
+        <h1 className='header-h1 title'>
           Manifeste
           <br />
           <span className='title-emphasis'>o Reino</span>
@@ -26,7 +26,7 @@ function App() {
         <section>
           <div className='first-section-titles'>
             <p className='eyebrow-2'>Coleção 2026</p>
-            <h2 className='first-section-title'>Modelos oficiais</h2>
+            <h2 className='first-section-h2 title'>Modelos oficiais</h2>
           </div>
           <div className='first-section'>
             <div>
