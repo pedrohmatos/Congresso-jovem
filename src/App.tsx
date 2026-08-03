@@ -1,10 +1,25 @@
+import { useState } from 'react';
 import './App.css'
 import blueTshirt from './assets/arte_01.png';
+import mustardTshirt from './assets/arte_03.png'
 import ChangeShirts from './components/ChangeShirts';
 import GoldenLink from './components/GoldenLink';
 import Specification from './components/Specification';
 
+type ShirtColor = 'blue' | 'mustard';
+
+const shirtColor = {
+  blue: blueTshirt,
+  mustard: mustardTshirt,
+};
+
 function App() {
+
+  const [currentShirt, setCurrentShirt] = useState<ShirtColor>('blue');
+
+  function handleShirtChange(color: ShirtColor): void {
+    setCurrentShirt(color);
+  }
 
   return (
     <>
@@ -31,10 +46,20 @@ function App() {
           <div className='first-section'>
             <div>
               <figure className='tshirt-container'>
-                <img src={blueTshirt} alt="blue-shirt" className='tshirt' />
+                <img src={shirtColor[currentShirt]} alt="t-shirt image" className='tshirt' />
                 <figcaption className='tshirt-caption-container'>
-                  <ChangeShirts>Azul marinho</ChangeShirts>
-                  <ChangeShirts>Mostarda</ChangeShirts>
+                  <ChangeShirts
+                    onChangeShirt={() => handleShirtChange('blue')}
+                    active={currentShirt === 'blue'}
+                  >
+                    Azul marinho
+                  </ChangeShirts>
+                  <ChangeShirts
+                    onChangeShirt={() => handleShirtChange('mustard')}
+                    active={currentShirt === 'mustard'}
+                  >
+                    Mostarda
+                  </ChangeShirts>
                 </figcaption>
               </figure>
             </div>
