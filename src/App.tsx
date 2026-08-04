@@ -5,6 +5,7 @@ import mustardTshirt from './assets/arte_03.png'
 import ChangeShirts from './components/ChangeShirts';
 import GoldenLink from './components/GoldenLink';
 import Specification from './components/Specification';
+import SectionTitles from './components/SectionTitles';
 
 type ShirtColor = 'blue' | 'mustard';
 
@@ -38,10 +39,7 @@ function App() {
       </header>
       <main className='main'>
         <section id='shirt'>
-          <div className='first-section-titles'>
-            <p className='eyebrow-2'>Coleção 2026</p>
-            <h2 className='first-section-h2 title'>Modelos oficiais</h2>
-          </div>
+          <SectionTitles smallText='Coleção 2026' bigText='Modelos oficiais' />
           <div className='first-section'>
             <div>
               <figure className='tshirt-container'>
@@ -76,6 +74,42 @@ function App() {
           </div>
 
         </section>
+        <hr className='row' />
+        <section id='volunteers' className='volunteers'>
+          <SectionTitles smallText='Precisamos de você' bigText='Seja um voluntário' />
+          <div className='second-section'>
+
+            <a href={import.meta.env.VITE_VOLUNTEERS} target='_blank' className='volunteer-team'>
+              <h3>Recepção</h3>
+              <p>
+                Equipe que será responsável por receber os irmãos com alegria e fornecer informações gerais.
+              </p>
+            </a>
+            
+            <a href={import.meta.env.VITE_VOLUNTEERS} target='_blank' className="volunteer-team">
+              <h3>Apoio</h3>
+              <p>
+                Equipe que garante que tudo funcione. Inclui manter a limpeza da igreja e ornamentação, repor a água e organizar as cadeiras antes e depois do evento.
+              </p>
+            </a>
+
+            <a href={import.meta.env.VITE_VOLUNTEERS} target='_blank' className="volunteer-team">
+              <h3>Intercessão</h3>
+              <p>
+                Equipe que ficará dedicada a orar pelo evento, pregadores, louvor e todos os irmãos presentes.
+              </p>
+            </a>
+
+            <a href={import.meta.env.VITE_VOLUNTEERS} target='_blank' className='volunteer-team'>
+              <h3>Equipe do lanche</h3>
+              <p>
+                Equipe responsável por preparar, organizar e distribuir os lanches ou refeições para os irmãos e equipes de voluntários nos intervalos.
+              </p>
+            </a>
+
+          </div>
+        </section>
+
       </main>
       <footer>
         <p className='church'>Igreja Batista Nova Geração</p>

@@ -8,7 +8,7 @@ type Link = {
 
 function GoldenLink({ children, hrefText, outside }: Link) {
     return (
-        <a href={hrefText} target={`${outside ? '_blank' : '_self'}`}>
+        <a href={hrefText} target={`${outside ? '_blank' : '_self'}`} className='goldenLink'>
             {children}
         </a>
     )
