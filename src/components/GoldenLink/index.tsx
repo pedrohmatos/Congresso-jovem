@@ -2,11 +2,13 @@ import "./GoldenLink.css";
 
 type Link = {
     children: string;
+    hrefText: string;
+    outside: boolean;
 }
 
-function GoldenLink({ children }: Link) {
+function GoldenLink({ children, hrefText, outside }: Link) {
     return (
-        <a href="#">
+        <a href={hrefText} target={`${outside ? '_blank' : '_self'}`}>
             {children}
         </a>
     )

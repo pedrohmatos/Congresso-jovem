@@ -1,5 +1,5 @@
 .header {
-    min-height: 75vh;
+    min-height: 100vh;
     background: var(--dark-gradient);
 
     display: flex;
@@ -8,6 +8,7 @@
     align-items: center;
 
     position: relative;
+    padding: 0rem 1rem;
 }
 
 .eyebrow {

@@ -26,19 +26,18 @@ function App() {
       <header className='header'>
         <p className='eyebrow'>Ministério de Jovens IBNG</p>
         <h1 className='header-h1 title'>
-          Manifeste
+          O Derramar do
           <br />
-          <span className='title-emphasis'>o Reino</span>
+          <span className='title-emphasis'>Espírito Santo</span>
         </h1>
         <div className='year'>2026</div>
 
-        <GoldenLink>Fazer pedido</GoldenLink>
-
+        <GoldenLink hrefText='#shirt' outside={false}>Conferir camisas</GoldenLink>
         <div className='mouse-icon'></div>
 
       </header>
       <main className='main'>
-        <section>
+        <section id='shirt'>
           <div className='first-section-titles'>
             <p className='eyebrow-2'>Coleção 2026</p>
             <h2 className='first-section-h2 title'>Modelos oficiais</h2>
@@ -72,7 +71,7 @@ function App() {
                 <span>A partir de</span>
                 <span className='price'> R$ 45</span>
               </div>
-              <GoldenLink>Garantir a minha</GoldenLink>
+              <GoldenLink hrefText={import.meta.env.VITE_LINK_TO_FORMS} outside={true}>Garantir a minha</GoldenLink>
             </aside>
           </div>
 
