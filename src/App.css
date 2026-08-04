@@ -9,6 +9,17 @@
 
     position: relative;
     padding: 0rem 1rem;
+    overflow: hidden;
+}
+.header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url(./assets/sun-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.078;
 }
 
 .eyebrow {
