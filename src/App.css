@@ -176,32 +176,6 @@
     margin-top: 2rem;
 }
 
-.style-title {
-    color: var(--text-yellow);
-    font-weight: 600;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-}
-
-.style-description {
-    display: flex;
-    flex-direction: column;
-}
-
-.price-text {
-    color: var(--text-subtle);
-}
-
-.price {
-    background: var(--gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 900;
-    font-size: 2.25rem;
-    font-family: var(--font-serif);
-}
-
 footer {
     text-align: center;
     padding: 6rem 1.5rem;
