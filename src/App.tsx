@@ -6,6 +6,7 @@ import ChangeShirts from './components/ChangeShirts';
 import GoldenLink from './components/GoldenLink';
 import Specification from './components/Specification';
 import SectionTitles from './components/SectionTitles';
+import VolunteerTeam from './components/VolunteerTeam';
 
 type ShirtColor = 'blue' | 'mustard';
 
@@ -78,34 +79,25 @@ function App() {
         <section id='volunteers' className='volunteers'>
           <SectionTitles smallText='Precisamos de você' bigText='Seja um voluntário' />
           <div className='second-section'>
+            <VolunteerTeam
+              title='Recepção'
+              description='Equipe que será responsável por receber os irmãos com alegria e fornecer informações gerais.'
+            />
 
-            <a href={import.meta.env.VITE_VOLUNTEERS} target='_blank' className='volunteer-team'>
-              <h3>Recepção</h3>
-              <p>
-                Equipe que será responsável por receber os irmãos com alegria e fornecer informações gerais.
-              </p>
-            </a>
-            
-            <a href={import.meta.env.VITE_VOLUNTEERS} target='_blank' className="volunteer-team">
-              <h3>Apoio</h3>
-              <p>
-                Equipe que garante que tudo funcione. Inclui manter a limpeza da igreja e ornamentação, repor a água e organizar as cadeiras antes e depois do evento.
-              </p>
-            </a>
+            <VolunteerTeam
+              title='Apoio'
+              description='Equipe que garante que tudo funcione. Inclui manter a limpeza da igreja e ornamentação, repor a água e organizar as cadeiras antes e depois do evento.'
+            />
 
-            <a href={import.meta.env.VITE_VOLUNTEERS} target='_blank' className="volunteer-team">
-              <h3>Intercessão</h3>
-              <p>
-                Equipe que ficará dedicada a orar pelo evento, pregadores, louvor e todos os irmãos presentes.
-              </p>
-            </a>
+            <VolunteerTeam
+              title='Intercessão'
+              description='Equipe que ficará dedicada a orar pelo evento, pregadores, louvor e todos os irmãos presentes.'
+            />
 
-            <a href={import.meta.env.VITE_VOLUNTEERS} target='_blank' className='volunteer-team'>
-              <h3>Equipe do lanche</h3>
-              <p>
-                Equipe responsável por preparar, organizar e distribuir os lanches ou refeições para os irmãos e equipes de voluntários nos intervalos.
-              </p>
-            </a>
+            <VolunteerTeam
+              title='Equipe do lanche'
+              description='Equipe responsável por preparar, organizar e distribuir os lanches ou refeições para os irmãos e equipes de voluntários nos intervalos.'
+            />
 
           </div>
         </section>
