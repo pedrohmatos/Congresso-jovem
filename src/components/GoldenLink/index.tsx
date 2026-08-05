@@ -1,4 +1,4 @@
-import "./GoldenLink.css";
+import styles from './GoldenLink.module.css';
 
 type Link = {
     children: string;
@@ -8,7 +8,7 @@ type Link = {
 
 function GoldenLink({ children, hrefText, outside }: Link) {
     return (
-        <a href={hrefText} target={`${outside ? '_blank' : '_self'}`} className='goldenLink'>
+        <a href={hrefText} target={`${outside ? '_blank' : '_self'}`} className={styles.goldenLink}>
             {children}
         </a>
     )

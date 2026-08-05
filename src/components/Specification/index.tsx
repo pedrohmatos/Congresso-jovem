@@ -1,4 +1,4 @@
-import "./Specification.css";
+import styles from './Specification.module.css';
 
 type SpecificationType = {
     title: string;
@@ -7,9 +7,9 @@ type SpecificationType = {
 
 function Specification({ title, description }: SpecificationType) {
     return (
-        <div className='specification'>
-            <span className='specification-title'>{title}</span>
-            <span className='specification-description'>{description}</span>
+        <div className={styles.specification}>
+            <span className={styles['specification-title']}>{title}</span>
+            <span className={styles['specification-description']}>{description}</span>
         </div>
     )
 }

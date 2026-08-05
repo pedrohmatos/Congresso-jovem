@@ -1,4 +1,4 @@
-import "./ChangeShirts.css";
+import styles from './ChangeShirts.module.css';
 
 type ChangeShirtsType = {
     children: string;
@@ -8,7 +8,7 @@ type ChangeShirtsType = {
 
 function ChangeShirts({children, onChangeShirt, active}: ChangeShirtsType) {
     return (
-        <button type='button' className={`tshirt-caption ${active ? 'active': ''}`} onClick={onChangeShirt}>
+        <button type='button' className={`${styles['tshirt-caption']} ${active ? styles.active : ''}`} onClick={onChangeShirt}>
             {children}
         </button>
     )

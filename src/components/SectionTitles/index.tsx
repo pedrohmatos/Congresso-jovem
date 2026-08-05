@@ -1,4 +1,4 @@
-import './SectionTitles.css';
+import styles from './SectionTitles.module.css';
 
 type SectionTitlesType = {
     smallText: string;
@@ -8,9 +8,9 @@ type SectionTitlesType = {
 function SectionTitles({ smallText, bigText }: SectionTitlesType) {
     return (
         <div>
-            <div className='section-titles'>
-                <p className='eyebrow'>{smallText}</p>
-                <h2 className='section-h2 title'>{bigText}</h2>
+            <div className={styles['section-titles']}>
+                <p className={styles.eyebrow}>{smallText}</p>
+                <h2 className={styles['section-h2']}>{bigText}</h2>
             </div>
         </div>
     )

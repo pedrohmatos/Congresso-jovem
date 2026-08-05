@@ -1,4 +1,4 @@
-import './VolunteerTeam.css';
+import styles from './VolunteerTeam.module.css';
 
 type VolunteerTeamType = {
     title: string;
@@ -7,7 +7,7 @@ type VolunteerTeamType = {
 
 function VolunteerTeam({ title, description }: VolunteerTeamType) {
     return (
-        <a href={import.meta.env.VITE_VOLUNTEERS} target='_blank' className='volunteer-team'>
+        <a href={import.meta.env.VITE_VOLUNTEERS} target='_blank' className={styles['volunteer-team']}>
             <h3>{title}</h3>
             <p>
                 {description}
