@@ -70,8 +70,10 @@ function App() {
 
               <div className='price-container'>
                 <Price title='Tradicional' price={45} />
-              </div>
 
+                <Price title='Oversized' price={60} />
+              </div>
+              
               <GoldenLink hrefText={import.meta.env.VITE_LINK_TO_FORMS} outside={true}>Garantir a minha</GoldenLink>
             </aside>
           </div>
