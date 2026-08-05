@@ -7,6 +7,7 @@ import GoldenLink from './components/GoldenLink';
 import Specification from './components/Specification';
 import SectionTitles from './components/SectionTitles';
 import VolunteerTeam from './components/VolunteerTeam';
+import Price from './components/Price';
 
 type ShirtColor = 'blue' | 'mustard';
 
@@ -66,10 +67,11 @@ function App() {
               <Specification title='Modelos' description='Tradicional & Oversized' />
               <Specification title='Cores' description='Azul Marinho & Mostarda' />
               <Specification title='Tamanhos' description='P . M . G . GG . XG' />
+
               <div className='price-container'>
-                <span>A partir de</span>
-                <span className='price'> R$ 45</span>
+                <Price title='Tradicional' price={45} />
               </div>
+
               <GoldenLink hrefText={import.meta.env.VITE_LINK_TO_FORMS} outside={true}>Garantir a minha</GoldenLink>
             </aside>
           </div>
